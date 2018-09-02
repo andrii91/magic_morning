@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FuturaPT-ExtraBold';
+  src: url('FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),  url('FuturaPT-ExtraBold.otf')  format('opentype'),
+	     url('FuturaPT-ExtraBold.woff') format('woff'), url('FuturaPT-ExtraBold.ttf')  format('truetype'), url('FuturaPT-ExtraBold.svg#FuturaPT-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
