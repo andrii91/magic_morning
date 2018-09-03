@@ -3,10 +3,15 @@ $(document).ready(function () {
     loop: true,
     margin: 0,
     nav: true,
+    items: 1,
     responsive: {
       0: {
-        items: 1
-      }
+        nav: false
+
+      },
+      1000: {
+        nav: true
+      },
     }
   })
 
@@ -49,6 +54,8 @@ $(document).ready(function () {
     margin: 0,
     nav: false,
     dots: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     responsive: {
       0: {
         items: 1
@@ -76,4 +83,32 @@ $(document).ready(function () {
     r_video.trigger('prev.owl.carousel');
   })
 
+
+  $('.scroll').click(function (e) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+
+    $('body,html').animate({
+      scrollTop: top - 60
+    }, 1500);
+
+  });
+
+  $('.mob-btn').click(function () {
+    $('.menu').slideToggle(200);
+  });
+
+  if ($(window).width() < 1200) {
+    $('.menu li').click(function () {
+      $('.menu').slideUp(200);
+    })
+  }
+  $(window).resize(function () {
+    if ($(window).width() < 1200) {
+      $('.menu li a').click(function () {
+        $('.menu').slideUp(200);
+      })
+    }
+  })
 });

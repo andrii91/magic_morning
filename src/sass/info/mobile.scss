@@ -1,3 +1,366 @@
 & {
-  
+  .desktop {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+  header,
+  footer,
+  main {
+    overflow: hidden;
+  }
+  .xs-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .xs-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .xs-2 {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .xs-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .xs-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .phone {
+    padding-left: 0;
+    text-align: center;
+    a {
+      font-size: 13px;
+      line-height: 22.76px;
+      letter-spacing: 1.3px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .mob-btn {
+    text-align: right;
+  }
+  .menu {
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+    li {
+      display: block;
+      margin: 15px 0;
+    }
+  }
+  nav {
+    padding: 8px 0;
+  }
+  .date {
+    padding-top: 60px;
+    padding-left: 0;
+    &:before {
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .head {
+    text-align: center;
+    padding-bottom: 50px;
+    .form {
+      box-shadow: -14px 0 81px 9px rgba(185, 185, 185, 0.3);
+      margin-top: 30px;
+      padding: 55px 22px;
+      p {
+        br {
+          display: block;
+        }
+      }
+      br {
+        display: none;
+      }
+    }
+  }
+  .head-top {
+    br {
+      display: none;
+    }
+    h1 {
+      font-size: 60px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+  }
+  .play {
+    margin-top: 187px;
+    margin-bottom: 114px;
+    &:before {
+      width: 260px;
+      height: 260px;
+      background-size: 100%;
+      top: 50%;
+    }
+  }
+  .play p {
+    color: #141414;
+    font-family: "Futura PT - Heavy";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    position: absolute;
+    top: -180px;
+    left: 0;
+    width: 100%;
+  }
+  .head-item .title {
+    margin-bottom: 15px;
+  }
+  .head-item .col-xl-6 {
+    margin-bottom: 35px;
+  }
+  .info-item {
+    .icon {
+      margin-top: 59px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  .info {
+    background: 0 0;
+  }
+  .section_1-quote {
+    padding-left: 15px;
+    padding-right: 15px;
+    &:before {
+      display: none;
+    }
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .h2-title {
+    font-size: 45px;
+    line-height: 1.2;
+    margin: 37px auto 20px;
+  }
+  .section_1-img,
+  .book-img {
+    img {
+      width: 100%;
+    }
+  }
+  .section_1-bottom {
+    br {
+      display: none;
+    }
+  }
+  .book {
+    padding: 50px 0;
+  }
+  .book-author p {
+    br {
+      display: none;
+    }
+  }
+  .book .h2-title {
+    margin-bottom: 20px;
+  }
+  .book-item p {
+    br {
+      display: none;
+    }
+  }
+  .book-item .book-info {
+    font-size: 15px;
+    line-height: 1.2;
+    padding-top: 0;
+  }
+  .reviews-carousel {
+    padding: 0;
+  }
+  .reviews-item {
+    br {
+      display: none;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  .efficiency {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-size: cover;
+    .title {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+  .efficiency-item {
+    margin-bottom: 30px;
+  }
+  .after {
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    .title {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+  .after-item {
+    margin-bottom: 60px;
+  }
+  .event-quote {
+    padding: 10px;
+    text-align: center;
+    .event-title {
+      text-align: right;
+      margin-top: 20px;
+    }
+  }
+  .event-list {
+    width: inherit;
+    height: inherit;
+    background: 0 0;
+    li {
+      position: relative;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      transform: none !important;
+      padding: 120px 0 0 0 !important;
+      text-align: center !important;
+      margin-bottom: 60px;
+      br {
+        display: none;
+      }
+      &:before {
+        top: 0% !important;
+        left: 50% !important;
+        right: inherit !important;
+        bottom: inherit !important;
+        transform: translateX(-50%) !important;
+      }
+    }
+  }
+  .owl_block-quote {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    &:before {
+      display: none;
+    }
+  }
+  .owl_block-nav .conten,
+  .r_video-nav .conten {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0;
+    text-align: center;
+    width: calc(100% - 120px);
+  }
+  .owl_block-item {
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  .r_video-carousel .play-btn {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .fancybox-slide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .owl_block-nav,
+  .r_video-nav {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .r_video-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .owl_block-item .title {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .r_video-info {
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }
+  }
+  .r_video-carousel {
+    margin-bottom: 20px;
+  }
+  .exhortation {
+    padding: 100px 0 50px;
+  }
+  .exhortation-subtitle {
+    font-size: 24px;
+  }
+  .section_1-item {
+    width: 260px;
+  }
+  .footer {
+    padding: 50px 0;
+    .form {
+      padding: 90px 15px 30px;
+    }
+  }
+  .footer-item {
+    text-align: center;
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }
+    .icon {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .footer .form form .label {
+    margin: 0 0 10px;
+    display: block;
+    max-width: 100%;
+  }
+  .footer .form form .submit {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
+  .footer-list li {
+    margin-bottom: 20px;
+  }
+  .footer .price {
+    height: inherit;
+    background-position: 6px 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .phone {
+    float: none;
+  }
 }

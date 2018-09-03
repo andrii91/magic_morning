@@ -3,6 +3,27 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+      .container {
+      max-width: 520px !important;
+      }
+      
+      .book-item {
+        .book-info p {
+          br {
+            display: block;
+          }
+        }
+      }
+      .book-item p br {
+        display: block;
+      }
+       .event-list li {
+          max-width: 44%;
+          display: inline-block;
+          margin: 0 1% 60px;
+      }
+      .head-item.mob {
+        display: flex;
+      }
 	}
 }

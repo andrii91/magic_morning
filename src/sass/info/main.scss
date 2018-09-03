@@ -1423,3 +1423,208 @@ line-height: 25px;
     padding-right: 71px;
   }
 }
+
+.exhortation {
+  padding: 4vw 0;
+  text-align: center;
+  .container {
+    max-width: 1215px
+  }
+}
+
+.location {
+  color: #000000;
+  font-family: "Futura PT";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  padding-top: 71px;
+  background: url('../images/loc.png') no-repeat center top;
+}
+
+.exhortation-subtitle {
+  color: #000000;
+  font-family: "Futura PT - Book";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 24.98px;
+  margin-bottom: 55px;
+}
+
+.footer {
+  background: url('../images/fbg.png') no-repeat center top;
+  padding: 90px 0;
+  background-size: cover;
+  .form {
+    position: relative;
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 90px 80px;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+      background-image: linear-gradient(to right, #ffc100 0%, #ff5600 100%);
+      position: absolute;
+      top: -1px;
+      left: 0;
+    }
+    form {
+      margin-top: 55px;
+      .label {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 279px;
+        margin-right: 20px;
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+      .submit {
+        width: inherit;
+        margin-top: 15px;
+        padding-left: 101px;
+        padding-right: 101px;
+      }
+    }
+  }
+  .price {
+    max-width: 377px;
+    height: 56px;
+    border-radius: 28px;
+    border: 2px solid #ff7c00;
+    background-color: #fff1c1;
+    padding-left: 60px;
+    padding-right: 40px;
+    color: #000000;
+    font-family: "Futura PT - Heavy";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    background-image: url('../images/pgb.png');
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+}
+
+.footer-item {
+  text-align: left;
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ffad00;
+    background-image: linear-gradient(to right, #ffc300 0%, #ff5600 100%);
+    float: left;
+    margin: 15px 35px 15px 15px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    &:before {
+      content: "";
+      width: 76px;
+      height: 76px;
+      background-color: #ffad00;
+      background-image: linear-gradient(to right, #ffc300 0%, #ff5600 100%);
+      opacity: 0.2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+    }
+    &:after {
+      content: "";
+      width: 90px;
+      height: 90px;
+      background-color: #ffad00;
+      background-image: linear-gradient(to right, #ffc300 0%, #ff5600 100%);
+      opacity: 0.1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+    }
+    svg {
+      width: 21px;
+      fill: #fff;
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+  p {
+    color: #000000;
+    font-family: "Futura PT - Book";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 9px 0 0;
+  }
+}
+
+.footer_bottom {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin:  0 10px;
+    a {
+      display: block;
+      color: #d0cac1;
+      font-family: "Futura PT - Book";
+      font-size: 17px;
+      font-weight: 400;
+      transition: 0.2s;
+      &:hover {
+        color: #222;
+      }
+    }
+  }
+}
+
+.logo-rezart {
+  display: block;
+  svg {
+    margin-top: 40px; 
+    display: inline-block;
+    fill: #313131;
+    width: 60px;
+  }
+}
+
+.modal {
+  max-width: 480px;
+  display: none;
+  &.large {
+    max-width: 768px;
+  }
+}
+
+.mob {
+  display: none;
+}
