@@ -121,6 +121,10 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     display: block;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.6;
+    }
     &.call {
       color: #ff5700;
       line-height: 23px;
@@ -190,7 +194,7 @@ nav {
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 4.8px;
-    margin-bottom: 29px;
+    margin-bottom: 15px;
   }
   p {
     color: #000000;
@@ -202,6 +206,7 @@ nav {
 
 .play {
   position: relative;
+      margin-top: 70px;
   &:before {
     content: "";
     background: url('../images/plbg.png') no-repeat center;
@@ -378,6 +383,37 @@ nav {
     }
     &:focus {
       border: 1px solid #ff7600;
+    }
+    &::-webkit-input-placeholder {
+        text-indent: 0;
+        transition: text-indent .5s ease
+    }
+
+    &:-moz-placeholder,
+    &::-moz-placeholder {
+        text-indent: 0;
+        transition: text-indent .5s ease
+    }
+
+    &:-ms-input-placeholder {
+        text-indent: 0;
+        transition: text-indent .5s ease
+    }
+
+    &:focus::-webkit-input-placeholder {
+        text-indent: 500px;
+        transition: text-indent .5s ease
+    }
+
+    &:focus:-moz-placeholder,
+    &:focus::-moz-placeholder {
+        text-indent: 500px;
+        transition: text-indent .5s ease
+    }
+
+    &:focus:-ms-input-placeholder {
+        text-indent: 500px;
+        transition: text-indent .5s ease
     }
   }
   .submit {
@@ -594,6 +630,7 @@ line-height: 27px;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
+      
     }
     .icon {
       width: 28px;
@@ -648,7 +685,7 @@ line-height: 27px;
 }
 
 .book {
-  background: url('../images/bg3.png') no-repeat center;
+//  background: url('../images/bg3.png') no-repeat center;
   padding: 70px 0;
   .h2-title {
     margin-bottom: 80px;
@@ -743,6 +780,11 @@ line-height: 27px;
       transform: translateY(5%);
       box-shadow: 0 33px 44px 5px rgba(255, 129, 0, 0);
     }
+  &:focus, &:active {
+    color: #fff;
+    transform: translateY(5%);
+      box-shadow: 0 33px 44px 5px rgba(255, 129, 0, 0);
+  }
     span {
       width: 3px;
       height: 3px;
@@ -970,6 +1012,8 @@ line-height: 27px;
     border-radius: 50%;
     margin-bottom: 50px;
     position: relative;
+    border-radius: 50%;
+      animation: pulse_1 1.5s infinite;
     img {
       height: 10px;
     }
@@ -982,6 +1026,8 @@ line-height: 27px;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      animation: pulse_1 1.5s infinite;
     }
   }
   p {
@@ -1052,6 +1098,7 @@ line-height: 27px;
     font-family: "Futura PT - Book";
     font-size: 18px;
     font-weight: 400;
+    
     &:nth-child(1){
       text-align: center;
       left: 50%;
@@ -1290,9 +1337,9 @@ line-height: 25px;
 }
 
 .r_video-item {
-  padding: 50px 84px;
+  padding: 30px 84px;
   .name {
-    background: url(../images/namebg.png) no-repeat 0 center;
+    background: url(../images/namebg.png) no-repeat 0 10px;
     padding-left: 20px;
     color: #929292;
     font-family: "Futura PT - Book";
@@ -1548,6 +1595,7 @@ line-height: 25px;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       border-radius: 50%;
+      animation: pulse_1 1.5s infinite;
     }
     &:after {
       content: "";
@@ -1561,6 +1609,7 @@ line-height: 25px;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       border-radius: 50%;
+      animation: pulse_1 1.5s infinite;
     }
     svg {
       width: 21px;
